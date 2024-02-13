@@ -56,12 +56,9 @@ main {
 
 .sun {
   background: linear-gradient(to right, rgb(249, 253, 0), rgb(233, 197, 39));
-  justify-content: center;
   margin-top: 90px;
   width: 200px;
   height: 200px;
-  margin-right: 20px;
-  margin-left: 20px;
 }
 .mercury {
   background: linear-gradient(to right, orange, grey);
