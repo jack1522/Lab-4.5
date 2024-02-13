@@ -1,0 +1,143 @@
+:root {
+  --planet-name-color: rgb(5, 2, 2);
+  --planet-bg: rgb(238, 142, 230);
+  --planet-au: rgb(233, 233, 233);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 8px;
+}
+
+.planet-card {
+  background-color: var(--planet-bg);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.planet-img {
+  width: 95px;
+  height: 95px;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.planet-name {
+  color: var(--planet-name-color);
+  font-weight: 600;
+  font-size: 20;
+  margin-top: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.planet-distance {
+  color: var(--planet-au);
+  font-weight: 700;
+  font-style: italic;
+}
+
+.planet-card:hover {
+  background-color: rgba(12, 78, 6, 0.5);
+  cursor: pointer;
+}
+.planet-name:hover {
+  color: var(--planet-au);
+}
+
+#sun {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.sun {
+  background: linear-gradient(to right, rgb(249, 253, 0), rgb(233, 197, 39));
+  justify-content: center;
+  margin-top: 90px;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.mercury {
+  background: linear-gradient(to right, orange, grey);
+  width: 35px;
+  height: 35px;
+  margin-top: 65px;
+}
+
+.venus {
+  width: 41px;
+  height: 41px;
+  margin-top: 59px;
+  background: linear-gradient(to top, orange, rgb(214, 188, 103), grey);
+}
+.earth {
+  width: 48px;
+  height: 48px;
+  margin-top: 52px;
+  background: linear-gradient(to right, blue, green, white);
+}
+
+.mars {
+  width: 58px;
+  height: 58px;
+  margin-top: 42px;
+  background: linear-gradient(
+    to right,
+    rgb(209, 101, 12),
+    rgb(216, 68, 9),
+    rgb(252, 5, 5),
+    rgb(240, 166, 81)
+  );
+}
+.jupiter {
+  width: 68px;
+  height: 68px;
+  margin-top: 32px;
+  background: linear-gradient(
+    to right,
+    rgb(221, 142, 24),
+    rgb(58, 40, 17),
+    white,
+    rgb(134, 100, 6)
+  );
+}
+.saturn {
+  width: 63px;
+  height: 63px;
+  margin-top: 37px;
+  background: linear-gradient(
+    to right,
+    rgb(94, 80, 63),
+    rgb(56, 42, 25),
+    rgb(221, 216, 209)
+  );
+}
+.uranus {
+  width: 53px;
+  height: 53px;
+  margin-top: 47px;
+  background: linear-gradient(
+    to left,
+    rgb(0, 162, 255),
+    rgb(140, 218, 238),
+    white
+  );
+}
+
+.neptune {
+  width: 57px;
+  height: 57px;
+  margin-top: 43px;
+  background: linear-gradient(
+    to right,
+    blue,
+    rgb(45, 4, 158),
+    rgb(75, 143, 233)
+  );
+}
